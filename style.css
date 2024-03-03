@@ -7,12 +7,13 @@
 
 .container{
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     background-image: url(./images/img4.jpg);
-    background-position-x: center;
+     background-position-x: center; 
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 .calculator{
     border-color: yellow;
@@ -89,5 +90,12 @@
     background-color: #a6b67c;
     font-family: Georgia, 'Times New Roman', Times, serif;
  }
+
+ @media (max-width:800px){
+   .container{
+       width: 100vw;
+       height: auto;
+   }
+}
 
 
