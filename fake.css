@@ -1,0 +1,105 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+ }
+ 
+ .container {
+     width: 100%;
+     min-height: 100vh; /* Changed from 120vh to ensure it fits smaller screens */
+     background-image: url(./images/img4.jpg);
+     background-position: center; /* Corrected property name */
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+ 
+ .calculator {
+     border-color: yellow;
+     border: solid;
+     background: #0d1d37;
+     padding: 5vw; /* Adjusted padding to be responsive */
+     border-radius: 15px;
+ }
+ 
+ .calculator form input {
+     border: rgb(35, 156, 54);
+     outline: 0;
+     width: 12vw; /* Adjusted width to be responsive */
+     height: 10vh;
+     border-radius: 8px;
+     box-shadow: -1vw -1vw 2vw rgba(97, 65, 227, 0.1), 1vw 1vw 2vw rgba(108, 116, 207, 0.2);
+     font-size: 4vw; /* Adjusted font-size to be responsive */
+     cursor: pointer;
+     margin: 1vw;
+     padding: 2vw; /* Adjusted padding to be responsive */
+ }
+ 
+ .calculator form input:hover {
+     transform: scale(1.1);
+     box-shadow: 0 0 2vw rgb(168, 13, 13); /* Adjusted box-shadow to be responsive */
+ }
+ 
+ form #display {
+     display: flex;
+     justify-content: flex-end;
+     margin: 2vw 0; /* Adjusted margin to be responsive */
+     height: 10vh;
+ }
+ 
+ form #display input {
+     text-align: right;
+     flex: 1;
+     font-size: 4vw;
+     box-shadow: none;
+ }
+ 
+ form #display input:hover {
+     background: transparent;
+     color: blue;
+     box-shadow: purple;
+     transform: scale(0.6);
+ }
+ 
+ form input.equals {
+     width: 30vw; /* Adjusted width to be responsive */
+     color: red;
+ }
+ 
+ form input.cl {
+     background-color: #ccd4e1;
+     color: blueviolet;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+ 
+ form input.spec2 {
+     background-color: rgb(211, 223, 118);
+     color: rgb(39, 39, 173);
+     font-family: Arial, Helvetica, sans-serif;
+     width: 15vw; /* Adjusted width to be responsive */
+ }
+ 
+ form input.spec2:hover {
+     transform: scale(0.8);
+     backface-visibility: visible;
+     box-shadow: none; /* Adjusted box-shadow to be responsive */
+ }
+ 
+ form input.spec1 {
+     color: rgb(20, 93, 13);
+     background-color: #a6b67c;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+ 
+ @media (max-width: 800px) {
+     .container {
+         width: 100vw;
+         height: auto;
+     }
+ 
+     .calculator {
+         padding: 5vw;
+     }
+ }
+ 
