@@ -6,8 +6,8 @@
  }
  
  .container {
-     width: 100%;
-     min-height: 100vh; /* Changed from 120vh to ensure it fits smaller screens */
+     width: auto;
+     min-height: auto; /* Changed from 120vh to ensure it fits smaller screens */
      background-image: url(./images/img4.jpg);
      background-position: center; /* Corrected property name */
      display: flex;
@@ -16,29 +16,28 @@
  }
  
  .calculator {
-     border-color: yellow;
      border: solid;
      background: #0d1d37;
-     padding: 5vw; /* Adjusted padding to be responsive */
+     padding: 4vw; /*Adjusted padding to be responsive */
      border-radius: 15px;
  }
  
  .calculator form input {
      border: rgb(35, 156, 54);
      outline: 0;
-     width: 12vw; /* Adjusted width to be responsive */
-     height: 10vh;
+     width: 11vw; /* Adjusted width to be responsive */
+     height: 9vh;
      border-radius: 8px;
      box-shadow: -1vw -1vw 2vw rgba(97, 65, 227, 0.1), 1vw 1vw 2vw rgba(108, 116, 207, 0.2);
-     font-size: 4vw; /* Adjusted font-size to be responsive */
+     font-size: 3vw; /* Adjusted font-size to be responsive */
      cursor: pointer;
      margin: 1vw;
      padding: 2vw; /* Adjusted padding to be responsive */
  }
  
  .calculator form input:hover {
-     transform: scale(1.1);
-     box-shadow: 0 0 2vw rgb(168, 13, 13); /* Adjusted box-shadow to be responsive */
+     transform: scale(1.01);
+     box-shadow: 0 0 2vw rgb(12, 12, 12); /* Adjusted box-shadow to be responsive */
  }
  
  form #display {
@@ -55,15 +54,15 @@
      box-shadow: none;
  }
  
- form #display input:hover {
+ /* form #display input:hover {
      background: transparent;
      color: blue;
-     box-shadow: purple;
+     box-shadow: purple; 
      transform: scale(0.6);
  }
- 
+  */
  form input.equals {
-     width: 30vw; /* Adjusted width to be responsive */
+     width: 25vw; /* Adjusted width to be responsive */
      color: red;
  }
  
@@ -94,7 +93,7 @@
  
  @media (max-width: 800px) {
      .container {
-         width: 100vw;
+         width: auto;
          height: auto;
      }
  
