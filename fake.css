@@ -8,7 +8,6 @@
  .container {
      width: auto;
      min-height: auto; /* Changed from 120vh to ensure it fits smaller screens */
-     background-image: url(./images/img4.jpg);
      background-position: center; /* Corrected property name */
      display: flex;
      align-items: center;
@@ -26,10 +25,10 @@
      border: rgb(35, 156, 54);
      outline: 0;
      width: 11vw; /* Adjusted width to be responsive */
-     height: 9vh;
-     border-radius: 8px;
+     height: 11vh;
+     border-radius: 10px;
      box-shadow: -1vw -1vw 2vw rgba(97, 65, 227, 0.1), 1vw 1vw 2vw rgba(108, 116, 207, 0.2);
-     font-size: 3vw; /* Adjusted font-size to be responsive */
+     font-size: 2vw; /* Adjusted font-size to be responsive */
      cursor: pointer;
      margin: 1vw;
      padding: 2vw; /* Adjusted padding to be responsive */
@@ -43,7 +42,7 @@
  form #display {
      display: flex;
      justify-content: flex-end;
-     margin: 2vw 0; /* Adjusted margin to be responsive */
+     margin: 2vw ; /* Adjusted margin to be responsive */
      height: 10vh;
  }
  
@@ -94,7 +93,7 @@
  @media (max-width: 800px) {
      .container {
          width: auto;
-         height: auto;
+         height: 90vh;
      }
  
      .calculator {
