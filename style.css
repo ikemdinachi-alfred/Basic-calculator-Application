@@ -8,8 +8,8 @@
 .container{
    padding-left: auto;
    padding-right: auto;
-    width: 90%;
-    height: 90vh;
+    width: 80vw;
+    height: 70vh;
     background-image: url(./images/img4.jpg);
      background-position: center; 
     display: flex;
@@ -98,7 +98,7 @@
  @media (max-width:800px){
    .container{
        width: 100vw;
-       height: 5vw;
+       height: 400vh;
    }
 }
 
